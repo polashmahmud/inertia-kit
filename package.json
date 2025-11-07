@@ -7,6 +7,9 @@
     "inertia-kit": "./dist/cli.js"
   },
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsx src/cli.ts",
     "build": "tsc && node copy-templates.mjs",
