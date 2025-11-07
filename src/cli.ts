@@ -38,7 +38,7 @@ program
 // Add a component
 program
     .command("add <component>")
-    .option("-d, --dest <dest>", "Destination folder", "resources/js/Components/ui-kit")
+    .option("-d, --dest <dest>", "Destination folder", "resources/js/Components/ui/form")
     .option("-o, --overwrite", "Overwrite if exists", false)
     .description("Add a Vue UI component to your Inertia project")
     .action(async (component: string, options) => {
