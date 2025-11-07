@@ -1,0 +1,40 @@
+{
+  "name": "@polash/inertia-kit",
+  "version": "1.0.0",
+  "description": "CLI tool for scaffolding shadcn-vue components in Laravel + Inertia + Vue projects",
+  "main": "dist/cli.js",
+  "bin": {
+    "inertia-kit": "./dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc && node copy-templates.mjs",
+    "test": "npm run dev -- list"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "ejs": "^3.1.10",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/ejs": "^3.1.5",
+    "tsx": "^4.0.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "inertia",
+    "vue",
+    "shadcn",
+    "laravel",
+    "ui",
+    "cli"
+  ],
+  "author": "Polash Mahmud",
+  "license": "MIT"
+}
