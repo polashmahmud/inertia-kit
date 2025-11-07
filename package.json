@@ -1,8 +1,11 @@
 {
-  "name": "@polash/inertia-kit",
+  "name": "@polashmahmud/inertia-kit",
   "version": "1.0.0",
   "description": "CLI tool for scaffolding shadcn-vue components in Laravel + Inertia + Vue projects",
   "main": "dist/cli.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "inertia-kit": "./dist/cli.js"
   },
