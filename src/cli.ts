@@ -17,7 +17,7 @@ program
     .description("🧩 @polash/inertia-kit — Scaffold shadcn-vue components for Inertia + Vue projects")
     .version("1.0.0")
 
-// 1️⃣ Show available templates
+// Show available templates
 program
     .command("list")
     .description("List all available component templates")
@@ -35,10 +35,10 @@ program
         }
     })
 
-// 2️⃣ Add a component
+// Add a component
 program
     .command("add <component>")
-    .option("-d, --dest <dest>", "Destination folder", "resources/js/Components/ui")
+    .option("-d, --dest <dest>", "Destination folder", "resources/js/Components/ui-kit")
     .option("-o, --overwrite", "Overwrite if exists", false)
     .description("Add a Vue UI component to your Inertia project")
     .action(async (component: string, options) => {
